@@ -85,7 +85,7 @@ Buttons
 	transition: border-color 0.4s, color 0.4s;
 }
 
-.btn-lg{
+.{
 	padding:20px 85px;
 	font-size: 15px;
 }
@@ -106,8 +106,7 @@ NAVBAR
 }
 
 .navbar-default .nav{
-	margin-top:19px;
-	margin-bottom: 19px;
+
 }
 
 .navbar-default .nav li a{
@@ -150,6 +149,7 @@ NAVBAR
 	margin-bottom: 0;
 }
 
+
 .slide{
 	background: url(../img/Slider.jpg) no-repeat;
 	background-size: cover;
@@ -177,6 +177,19 @@ NAVBAR
 .slide span{
 	margin-bottom: 30px;
 }
+
+
+@media (max-width: 743px) {
+	.slide{
+		background: url(../img/Slider-small.jpg) no-repeat;
+		margin-top:0;
+
+		background-size: cover;
+		background-position: center;
+	}
+}
+
+
 
 /********************
 Services
@@ -260,6 +273,20 @@ PORTFOLIO
 }
 .centered-pills a {
 	float: left;
+}
+
+@media (max-width: 890px) {
+	.nav-pills > li {
+		width: 100%;
+		border: 0;
+		
+		
+	}
+	.nav-pills > li > a{
+		width: 90%;
+		border: 0;
+		margin: 5px 5% 0 5%;
+	}
 }
 
 .nav-pills > li > a{
@@ -633,4 +660,22 @@ footer a{
 	font-size: 16px;
 	font-weight: 100;
 	line-height: 24px;
+}
+
+.timer {
+	padding: 80px 0 40px 0;
+	display: none;
+}
+.timer-small {
+	padding: 80px 0 40px 0;
+	display: block;
+}
+
+@media (min-width: 768px) {
+	.timer {
+		display: block;
+	}
+	.timer-small {
+		display: none;
+	}
 }

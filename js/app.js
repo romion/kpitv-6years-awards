@@ -84,23 +84,4 @@ $(window).resize(function () {
 });
 
 
-function stickyMenu() {
-
-    var scrollTop = $(window).scrollTop();
-    var offset = 0;
-
-    if (scrollTop > offset) {
-        $('.navbar-default').addClass('navbar-small');
-    } else {
-        $('.navbar-default').removeClass('navbar-small');
-    }
-}
-
-//What happen on window scroll  
-$(window).on("scroll", function (e) {
-    setTimeout(function () {
-        stickyMenu();
-    }, 300)
-});
-
 });
